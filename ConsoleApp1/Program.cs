@@ -11,11 +11,12 @@ namespace CSharpTut.cs
         static void Main(string[] args)
         {
 
-            decimal decPiVal = 3.141592653589793238462643382M;
-            decimal decBigNum = 3.0000000000000000000000000000011M;
+            double dblPiVal = 3.14159265358979;
+            double dblBigNum = 3.000000000000002;
+            Console.WriteLine("DBL : PI + bigNum = {0}", dblPiVal + dblBigNum);
 
-            Console.WriteLine("Biggest Long : {0}", long.MaxValue);
-            Console.WriteLine("Samllest long : {0}", long.MinValue);
+            Console.WriteLine("Biggest decimal : {0}", Double.MaxValue.ToString("#"));
+           
 
             Console.ReadLine();
 
