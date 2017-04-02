@@ -10,18 +10,11 @@ namespace CSharpTut.cs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
 
-            for(int i = 0; i < args.Length; i++)
-            {
-                Console.WriteLine("Args {0} : {1}", i, args[i]);
-            }
+            bool CanIVote = true;
 
-            string[] myArgs = Environment.GetCommandLineArgs();
-
-            Console.WriteLine(string.Join(", ", myArgs));
-
-            SayHello();
+            Console.WriteLine("Biggest Integer : {0}", int.MaxValue);
+            Console.WriteLine("Samllest Integer : {0}", int.MinValue);
 
             Console.ReadLine();
 
