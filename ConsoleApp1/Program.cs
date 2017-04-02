@@ -11,11 +11,18 @@ namespace CSharpTut.cs
         static void Main(string[] args)
         {
 
-            float fltPiVal = 3.141592F;
-            float fltBigNum = 3.000002F;
-            Console.WriteLine("DBL : PI + bigNum = {0}", fltPiVal + fltBigNum);
+            //Other Data Types
+            //byte : 8-bit unsigned int 0 to 255
+            //char : 16-bit unicode character
+            //sbyte : 8-bit signed int 128 to 127
+            //short : 16-bit signed int -32, 768 to 32, 767
+            //uint : 32-bit unsigned int - to 4,294,967,295
+            //ulong : 64-big unsigned int - to 18,446,744,073,709,551,615
+            //ushort : 16-big unsigned int - to 65,535
 
-            Console.WriteLine("Biggest Float : {0}", float.MaxValue.ToString("#"));
+            bool boolFromStr = bool.Parse("true");
+            int intFromStr = int.Parse("100");
+            double dblFromStr = double.Parse("1.234");
            
 
             Console.ReadLine();
