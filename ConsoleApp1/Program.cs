@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Numerics;
+
 namespace CSharpTut.cs
 {
     class Program
@@ -20,31 +22,12 @@ namespace CSharpTut.cs
             //ulong : 64-big unsigned int - to 18,446,744,073,709,551,615
             //ushort : 16-big unsigned int - to 65,535
 
-            DateTime awesomeDate = new DateTime(1974, 12, 21);
-            Console.WriteLine("Day of Week : {0}", awesomeDate.DayOfWeek);
-
-            awesomeDate = awesomeDate.AddDays(4);
-            awesomeDate = awesomeDate.AddMonths(1);
-            awesomeDate = awesomeDate.AddYears(1);
-
-            Console.WriteLine("New Date : {0}", awesomeDate.Date);
-
-            TimeSpan lunchTime = new TimeSpan(12, 30, 0);
-            lunchTime = lunchTime.Subtract(new TimeSpan(0, 15, 0));
-            lunchTime = lunchTime.Add(new TimeSpan(1, 0, 0));
-            Console.WriteLine("New Time : {0}", lunchTime.ToString());
+            BigInteger bigNum = BigInteger.Parse("1234512345123451234512345");
+            Console.WriteLine("Big Num * 2 = {0}", bigNum * 2);
 
 
             Console.ReadLine();
 
-        }
-
-        private static void SayHello()
-        {
-            string name = "";
-            Console.Write("What is your name : ");
-            name = Console.ReadLine();
-            Console.WriteLine("Hello {0} : ", name);
         }
     }
 }
