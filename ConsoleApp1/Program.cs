@@ -22,8 +22,10 @@ namespace CSharpTut.cs
             //ulong : 64-big unsigned int - to 18,446,744,073,709,551,615
             //ushort : 16-big unsigned int - to 65,535
 
-            BigInteger bigNum = BigInteger.Parse("1234512345123451234512345");
-            Console.WriteLine("Big Num * 2 = {0}", bigNum * 2);
+            Console.WriteLine("Currency : {0:c}", 23.455);
+            Console.WriteLine("Pad with 0s : {0:d4}", 23);
+            Console.WriteLine("3 Decimals : {0:f3}", 23.455);
+            Console.WriteLine("Commas : {0:n4}", 2300);
 
 
             Console.ReadLine();
