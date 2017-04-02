@@ -11,10 +11,11 @@ namespace CSharpTut.cs
         static void Main(string[] args)
         {
 
-            bool CanIVote = true;
+            decimal decPiVal = 3.141592653589793238462643382M;
+            decimal decBigNum = 3.0000000000000000000000000000011M;
 
-            Console.WriteLine("Biggest Integer : {0}", int.MaxValue);
-            Console.WriteLine("Samllest Integer : {0}", int.MinValue);
+            Console.WriteLine("Biggest Long : {0}", long.MaxValue);
+            Console.WriteLine("Samllest long : {0}", long.MinValue);
 
             Console.ReadLine();
 
