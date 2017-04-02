@@ -11,11 +11,11 @@ namespace CSharpTut.cs
         static void Main(string[] args)
         {
 
-            double dblPiVal = 3.14159265358979;
-            double dblBigNum = 3.000000000000002;
-            Console.WriteLine("DBL : PI + bigNum = {0}", dblPiVal + dblBigNum);
+            float fltPiVal = 3.141592F;
+            float fltBigNum = 3.000002F;
+            Console.WriteLine("DBL : PI + bigNum = {0}", fltPiVal + fltBigNum);
 
-            Console.WriteLine("Biggest decimal : {0}", Double.MaxValue.ToString("#"));
+            Console.WriteLine("Biggest Float : {0}", float.MaxValue.ToString("#"));
            
 
             Console.ReadLine();
